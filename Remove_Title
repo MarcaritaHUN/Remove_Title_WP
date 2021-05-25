@@ -1,0 +1,6 @@
+// Title Removal from WordPress image
+add_filter( 'wp_get_attachment_image_attributes', 'remove_image_text');
+function remove_image_text( $attr ) {
+unset($attr['title']);
+return $attr;
+}
