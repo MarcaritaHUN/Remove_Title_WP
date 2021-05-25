@@ -4,3 +4,5 @@ function remove_image_text( $attr ) {
 unset($attr['title']);
 return $attr;
 }
+//if it doesn't work try with js
+<script> jQuery(document).ready(function($) { $('img[title]').each(function() { $(this).removeAttr('title'); }); }); </script>
